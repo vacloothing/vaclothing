@@ -1,0 +1,36 @@
+.track{
+
+width:500px;
+max-width:90%;
+
+margin:120px auto;
+
+text-align:center;
+
+}
+
+.track input{
+
+width:100%;
+
+padding:15px;
+
+margin:20px 0;
+
+}
+
+.track button{
+
+padding:15px 35px;
+
+cursor:pointer;
+
+}
+
+#result{
+
+margin-top:30px;
+
+font-size:20px;
+
+}
