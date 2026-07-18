@@ -1,0 +1,240 @@
+/* ===========================
+   CHECKOUT PAGE
+=========================== */
+
+.checkout-header{
+
+    padding-top:160px;
+    padding-bottom:60px;
+
+    text-align:center;
+
+}
+
+.checkout-header h1{
+
+    font-size:65px;
+
+    letter-spacing:5px;
+
+    margin-bottom:10px;
+
+}
+
+.checkout-header p{
+
+    color:#999;
+
+    font-size:18px;
+
+}
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.checkout-container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+    padding-bottom:120px;
+
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.checkout-form{
+
+    background:#111;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid #222;
+
+}
+
+.checkout-form h2{
+
+    margin-bottom:30px;
+
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-bottom:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:12px;
+
+    background:#1b1b1b;
+
+    color:white;
+
+    border:1px solid #222;
+
+    font-size:15px;
+
+}
+
+.checkout-form textarea{
+
+    resize:none;
+
+    height:130px;
+
+}
+
+.checkout-form input:focus,
+.checkout-form select:focus,
+.checkout-form textarea:focus{
+
+    border:1px solid var(--gold);
+
+}
+
+.checkout-form button{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:var(--gold);
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    transition:.4s;
+
+}
+
+.checkout-form button:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+/* ===========================
+   ORDER BOX
+=========================== */
+
+.order-box{
+
+    background:#111;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    border:1px solid #222;
+
+    height:fit-content;
+
+    position:sticky;
+
+    top:120px;
+
+}
+
+.order-box h2{
+
+    margin-bottom:25px;
+
+}
+
+.checkout-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+
+    color:#ddd;
+
+}
+
+.order-box h3{
+
+    margin-top:30px;
+
+    border-top:1px solid #333;
+
+    padding-top:20px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.checkout-container{
+
+grid-template-columns:1fr;
+
+}
+
+.order-box{
+
+position:relative;
+
+top:0;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.checkout-header h1{
+
+font-size:45px;
+
+}
+
+.checkout-form{
+
+padding:20px;
+
+}
+
+}

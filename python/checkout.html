@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VA | Checkout</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/checkout.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<div class="logo">
+
+<img src="logo.jpeg">
+
+</div>
+
+
+<nav>
+
+<a href="index.html">HOME</a>
+
+<a href="shop.html">SHOP</a>
+
+<a href="cart.html">CART</a>
+
+</nav>
+
+
+</header>
+
+
+
+<section class="checkout-header">
+
+<h1>
+
+CHECKOUT
+
+</h1>
+
+<p>
+
+Complete Your Order
+
+</p>
+
+</section>
+
+
+
+<section class="checkout-container">
+
+
+<div class="checkout-form">
+
+
+<h2>
+
+Customer Information
+
+</h2>
+
+
+<input 
+type="text"
+id="name"
+placeholder="Full Name">
+
+
+
+<input 
+type="tel"
+id="phone"
+placeholder="Phone Number">
+
+
+
+<input 
+type="text"
+id="address"
+placeholder="Full Address">
+
+
+
+<select id="size">
+
+<option>
+
+Choose Size
+
+</option>
+
+<option>S</option>
+
+<option>M</option>
+
+<option>L</option>
+
+<option>XL</option>
+
+<option>XXL</option>
+
+</select>
+
+
+
+<select id="payment">
+
+<option>
+
+Payment Method
+
+</option>
+
+<option>
+
+Cash On Delivery
+
+</option>
+
+<option>
+
+Vodafone Cash
+
+</option>
+
+<option>
+
+Instapay
+
+</option>
+
+</select>
+
+
+
+<textarea 
+id="note"
+placeholder="Order Notes">
+
+</textarea>
+
+
+
+<button onclick="placeOrder()">
+
+PLACE ORDER
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="order-box">
+
+
+<h2>
+
+Your Order
+
+</h2>
+
+
+<div id="checkoutItems">
+
+</div>
+
+
+<h3>
+
+Total:
+
+<span id="checkoutTotal">
+
+0 EGP
+
+</span>
+
+
+</h3>
+
+
+</div>
+
+
+</section>
+
+
+
+<script src="js/checkout.js"></script>
+
+
+</body>
+
+</html>

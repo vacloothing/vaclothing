@@ -1,0 +1,276 @@
+/* ===========================
+   PRODUCT PAGE
+=========================== */
+
+.product-page{
+
+    width:90%;
+
+    margin:150px auto 100px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.product-image{
+
+    background:#111;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    border:1px solid #222;
+
+}
+
+.product-image img{
+
+    width:100%;
+
+    max-width:500px;
+
+    transition:.5s;
+
+    cursor:zoom-in;
+
+}
+
+.product-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+/* ===========================
+   INFO
+=========================== */
+
+.product-info h1{
+
+    font-size:48px;
+
+    margin-bottom:15px;
+
+}
+
+.product-info h2{
+
+    color:var(--gold);
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+.product-info p{
+
+    color:#bdbdbd;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ===========================
+   SIZES
+=========================== */
+
+.sizes{
+
+    margin-bottom:35px;
+
+}
+
+.sizes h3{
+
+    margin-bottom:15px;
+
+}
+
+.sizes button{
+
+    width:55px;
+
+    height:55px;
+
+    margin-right:12px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#1b1b1b;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.sizes button:hover{
+
+    background:var(--gold);
+
+    color:black;
+
+}
+
+/* ===========================
+   COLORS
+=========================== */
+
+.colors{
+
+    margin-bottom:40px;
+
+}
+
+.colors h3{
+
+    margin-bottom:15px;
+
+}
+
+.colors span{
+
+    display:inline-block;
+
+    width:35px;
+
+    height:35px;
+
+    border-radius:50%;
+
+    margin-right:12px;
+
+    border:2px solid white;
+
+    cursor:pointer;
+
+}
+
+.black{
+
+    background:black;
+
+}
+
+.white{
+
+    background:white;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.buy-btn{
+
+    width:100%;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:var(--gold);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.buy-btn:hover{
+
+    background:white;
+
+    color:black;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.product-page{
+
+grid-template-columns:1fr;
+
+}
+
+.product-info{
+
+text-align:center;
+
+}
+
+}
+
+@media(max-width:600px){
+
+.product-info h1{
+
+font-size:35px;
+
+}
+
+.product-info h2{
+
+font-size:26px;
+
+}
+
+.sizes button{
+
+width:48px;
+
+height:48px;
+
+margin-bottom:10px;
+
+}
+
+}
+/* Active Size */
+
+.active-size{
+
+background:#C8A96A !important;
+
+color:black !important;
+
+}
