@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VA Admin Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>VA</h2>
+
+<a href="#">Dashboard</a>
+
+<a href="#">Orders</a>
+
+<a href="#">Products</a>
+
+<a href="#">Customers</a>
+
+<a href="#">Settings</a>
+
+</div>
+
+<div class="main">
+
+<h1>Dashboard</h1>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Orders</h3>
+
+<p id="ordersCount">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Products</h3>
+
+<p id="productsCount">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Revenue</h3>
+
+<p id="revenue">0 EGP</p>
+
+</div>
+
+</div>
+<button onclick="clearOrders()" style="
+padding:10px 20px;
+background:red;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-bottom:20px;
+">
+Clear All Orders
+</button>
+<h2>Latest Orders</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Name</th>
+
+<th>Phone</th>
+
+<th>Total</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+
+<tbody id="ordersTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>
